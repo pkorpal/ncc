@@ -72,7 +72,7 @@ namespace NCC
             showDevices();
             showSubdomainSnppList();
             showAdjacentNetworks();
-
+            showSnppConnections();
         }
 
         public void showClients() {
