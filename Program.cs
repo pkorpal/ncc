@@ -8,9 +8,6 @@ namespace NCC
     public class SynchronousSocketListener
     { 
         public static string data = null;
-        Policy policy = new Policy();
-        Directory directory = new Directory();
-
         public static void StartListening()
         {
             // Data buffer for incoming data.  

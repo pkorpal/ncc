@@ -16,6 +16,9 @@ namespace NCC
         int throughput;
         private bool running = false;
 
+        Policy policy = new Policy();
+        Directory directory = new Directory();
+
         public CallRequest(string msg)
         {
             this.message = msg;
