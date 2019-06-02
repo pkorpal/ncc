@@ -1,0 +1,180 @@
+[
+  {
+    "name": "R1",
+    "port": 11000,
+    "connections": [
+      {
+        "portOut": 12,
+        "label": 2
+      },
+      {
+        "portOut": 14,
+        "label": 3
+      },
+      {
+        "portOut": 11,
+        "label": 1
+      }
+    ],
+    "tunnels": [
+      {
+        "FEC": "12",
+        "portIn": 11,
+        "action": "13",
+        "labelIn": 12,
+        "labelOut": 11
+      },
+      {
+        "FEC": "12",
+        "portIn": 12,
+        "action": "POP",
+        "labelIn": 12,
+        "labelOut": 11
+      }
+    ]
+  },
+  {
+    "name": "R2",
+    "port": 12000,
+    "connections": [
+      {
+        "portOut": 23,
+        "label": 2
+      },
+      {
+        "portOut": 23,
+        "label": 3
+      },
+      {
+        "portOut": 21,
+        "label": 1
+      }
+    ],
+    "tunnels": [
+      {
+        "FEC": "1",
+        "portIn": 23,
+        "action": "21",
+        "labelIn": 27,
+        "labelOut": 17
+      },
+      {
+        "FEC": "2",
+        "portIn": 21,
+        "action": "23",
+        "labelIn": 17,
+        "labelOut": 27
+      },
+      {
+        "FEC": "1",
+        "portIn": 23,
+        "action": "21/PUSH",
+        "labelIn": 48,
+        "labelOut": 0
+      },
+      {
+        "FEC": "2",
+        "portIn": 21,
+        "action": "23",
+        "labelIn": 0,
+        "labelOut": 48
+      },
+      {
+        "FEC": "1",
+        "portIn": 21,
+        "action": "21",
+        "labelIn": 37,
+        "labelOut": 18
+      }
+    ]
+  },
+  {
+    "name": "R3",
+    "port": 13000,
+    "connections": [
+      {
+        "portOut": 34,
+        "label": 2
+      },
+      {
+        "portOut": 33,
+        "label": 3
+      },
+      {
+        "portOut": 32,
+        "label": 1
+      }
+    ],
+    "tunnels": [
+      {
+        "FEC": "1",
+        "portIn": 34,
+        "action": "32",
+        "labelIn": 37,
+        "labelOut": 27
+      },
+      {
+        "FEC": "2",
+        "portIn": 32,
+        "action": "34",
+        "labelIn": 27,
+        "labelOut": 37
+      },
+      {
+        "FEC": "1",
+        "portIn": 34,
+        "action": "32",
+        "labelIn": 0,
+        "labelOut": 48
+      },
+      {
+        "FEC": "2",
+        "portIn": 32,
+        "action": "34",
+        "labelIn": 48,
+        "labelOut": 0
+      },
+      {
+        "FEC": "1",
+        "portIn": 34,
+        "action": "34",
+        "labelIn": 18,
+        "labelOut": 37
+      }
+    ]
+  },
+  {
+    "name": "R4",
+    "port": 14000,
+    "connections": [
+      {
+        "portOut": 42,
+        "label": 2
+      },
+      {
+        "portOut": 41,
+        "label": 1
+      },
+      {
+        "portOut": 43,
+        "label": 3
+      }
+    ],
+    "tunnels": [
+      {
+        "FEC": "1",
+        "portIn": 42,
+        "action": "43",
+        "labelIn": 0,
+        "labelOut": 37
+      },
+      {
+        "FEC": "2",
+        "portIn": 43,
+        "action": "42",
+        "labelIn": 37,
+        "labelOut": 0
+      }
+    ]
+  }
+]

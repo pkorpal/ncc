@@ -1,0 +1,11 @@
+/Users/pkorpal/Desktop/tmp/tmp/obj/Debug/netcoreapp2.2/tmp.csprojAssemblyReference.cache
+/Users/pkorpal/Desktop/tmp/tmp/obj/Debug/netcoreapp2.2/tmp.csproj.CoreCompileInputs.cache
+/Users/pkorpal/Desktop/tmp/tmp/obj/Debug/netcoreapp2.2/tmp.AssemblyInfoInputs.cache
+/Users/pkorpal/Desktop/tmp/tmp/obj/Debug/netcoreapp2.2/tmp.AssemblyInfo.cs
+/Users/pkorpal/Desktop/tmp/tmp/bin/Debug/netcoreapp2.2/tmp.deps.json
+/Users/pkorpal/Desktop/tmp/tmp/bin/Debug/netcoreapp2.2/tmp.runtimeconfig.json
+/Users/pkorpal/Desktop/tmp/tmp/bin/Debug/netcoreapp2.2/tmp.runtimeconfig.dev.json
+/Users/pkorpal/Desktop/tmp/tmp/bin/Debug/netcoreapp2.2/tmp.dll
+/Users/pkorpal/Desktop/tmp/tmp/bin/Debug/netcoreapp2.2/tmp.pdb
+/Users/pkorpal/Desktop/tmp/tmp/obj/Debug/netcoreapp2.2/tmp.dll
+/Users/pkorpal/Desktop/tmp/tmp/obj/Debug/netcoreapp2.2/tmp.pdb
