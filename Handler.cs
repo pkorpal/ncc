@@ -43,6 +43,9 @@ namespace NCC
                     if (data.IndexOf("CALL_REQUEST") > -1)
                     {
                         CallRequest callRequest = new CallRequest(data);
+                        string msg = "Connection is set";
+                        byte[] message = Encoding.UTF8.GetBytes(msg); 
+                        socket.Send(message);
                     } else if (data.IndexOf("CALL_COORDINATION_REQUEST") > -1) {
                         CallCoordinationRequest callCoordinationRequest = new CallCoordinationRequest();
                     } else if (data.IndexOf("PATH_REQUEST") > -1) {
