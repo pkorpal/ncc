@@ -18,8 +18,7 @@ namespace NCC
             IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 10000);
 
             // Create a TCP/IP socket.  
-            Socket listener = new Socket(ipAddress.AddressFamily,
-                SocketType.Stream, ProtocolType.Tcp);
+            Socket listener = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
             listener.ReceiveBufferSize = 100;
             listener.SendBufferSize = 100;
 
@@ -42,10 +41,6 @@ namespace NCC
             {
                 Console.WriteLine(e.ToString());
             }
-
-            // Console.WriteLine("\nPress ENTER to continue...");
-            // Console.Read();
-
         }
 
         public static int Main(String[] args)

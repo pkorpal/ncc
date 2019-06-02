@@ -14,6 +14,8 @@ namespace NCC
         Byte[] bytes;
         String data;
         String name;
+        Policy policy = new Policy();
+        Directory directory = new Directory();
 
         public Handler(Socket s)
         {
