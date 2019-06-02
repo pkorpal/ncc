@@ -69,13 +69,40 @@ namespace NCC
                 this.subdomainSnppList = tmp.subdomainSnppList;
             }
             showClients();
+            showDevices();
+            showSubdomainSnppList();
+            showAdjacentNetworks();
+
         }
 
         public void showClients() {
-            Console.WriteLine("Showing clients");
+            Console.WriteLine("Clients in network");
             foreach(var client in this.clients)
                 Console.WriteLine("Client: {0}, Snpp: {1}", client.Key, client.Value);
         }
 
+        public void showDevices() {
+            Console.WriteLine("Devices in subdomain");
+            foreach(var device in this.devices)
+                Console.WriteLine("Snpp: {0}, Device: {1}", device.Key, device.Value);
+        }
+
+        public void showSubdomainSnppList() {
+            Console.WriteLine("Snpps in subdomain");
+            foreach(var snpp in this.subdomainSnppList)
+                Console.WriteLine("Snpp: {0}", snpp);
+        }
+
+        public void showAdjacentNetworks() {
+            Console.WriteLine("Adjacent networks");
+            foreach(var network in this.adjacentSubnetworks)
+                Console.WriteLine("Snpp: {0}, NCC: {1}", network.Key, network.Value);
+        }
+
+        public void  showSnppConnections() {
+            Console.WriteLine("Snpp connections");
+            foreach(var sc in this.snppDict)
+                Console.WriteLine("Source: {0} Destination: {1}");
+        }
     }
 }
